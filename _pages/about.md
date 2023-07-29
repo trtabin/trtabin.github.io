@@ -8,19 +8,6 @@ redirect_from:
   - /about.html
 ---
 
-Hey! Thanks for stopping by my website. I’m Alicia, a graduate research assistant at the University of Missouri – Columbia. I pursued my master’s as a Fulbright Scholar and now, I’m working towards my PhD in Computer Science. I have been working in the “Virtualization, Multimedia and Networking Lab” (VIMAN Lab) since Jan 2020, where I constantly make the best of any opportunity to further advance my skills, and build collaborators with other universities, faculty and students.
+Tahmidur Rahman Tabin received the Bachelor of Science degree in Electrical and Electronic Engineering from Noakhali Science and Technology University, Noakhali, Bangladesh, in 2022. He is works with the R&D team as Embedded System Engineer at Crodosense Limited. His research interests include the development of low complexity, power-efficient machine learning solutions for wearable devices, energy efficient signal processing and edge computing. 
 
-News
-======
-
-Education
-======
-* B.S. in Electrical and Electronic Engineering , Noakhali Science and Technology University, 2022
-
-Work experience
-======
-* Summer 2015: Research Assistant
-  * Github University
-  * Duties included: Tagging issues
-  * Supervisor: Professor Git
 
