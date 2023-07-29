@@ -7,7 +7,7 @@
 
 # Site Settings
 locale                   : "en-US"
-title                    : ""
+title                    : "Portfolio of Tabin"
 title_separator          : "-"
 name                     : &name "Tahmidur Rahman Tabin"
 description              : &description "personal description"
