@@ -1,7 +1,7 @@
 ---
-title: "Portfolio item number 1"
-excerpt: "Short description of portfolio item number 1<br/><img src='/images/500x300.png'>"
+title: "8 Channel Data Logger"
+excerpt: "<br/><img src='/images/CSDL.png'>"
 collection: portfolio
 ---
 
-This is an item in your portfolio. It can be have images or nice text. If you name the file .md, it will be parsed as markdown. If you name the file .html, it will be parsed as HTML. 
+The CS-DL1024 is a high-precision (24-bit ADC) and rugged data logger with hardware support for cloud upload that offers highly affordable solutions to your outdoor environmental monitoring challenges. It uses very low power allowing you to use even in remote locations with zero maintenance. You can connect to ten different CredoSense sensors for your wide array of needs for monitoring microclimate, agriculture, and ecological and hydrological research. It can also be used as a data logger for your weather stations.
