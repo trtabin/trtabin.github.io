@@ -15,12 +15,12 @@ main:
   # - title: "Blog Posts"
   #   url: /year-archive/
 
+  - title: "Skills"
+    url: /skills/
+
   - title: "Contact"
     url: /contact/
 
-  - title: "Skills"
-    url: /skills/
-    
   - title: "CV"
     url: /files/Tahmidur_Rahman_Tabin_CV.pdf
     
