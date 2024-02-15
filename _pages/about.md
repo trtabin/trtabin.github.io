@@ -15,8 +15,8 @@ Tahmidur Rahman Tabin received the Bachelor of Science degree in Electrical and 
 ### Embedded Hardware Engineer
 CredoSense Inc. (Ltd). [ 08/2022 – Current ] 
 
-1. Designed and developed firmware for Data Logger using C/C++ programming language, resulting in a 30% decrease in power consumption
-2. Develop required firmware to support the hardware
-3. Implemented device drivers for various peripherals such as UART, CAN, SDI-12, RS-485, SPI, and I2C to enable communication between microcontrollers and external devices
-4. Collaborated with cross-functional teams, including hardware engineers, software engineers, and quality assurance, to ensure timely delivery of embedded systems
+1. Updated the existing firmware of IoT-Gateway to reduce 30% power consumption by improving sleep mode and using a separate low-power coprocessor and also improved the overall performance of the device.
+2. Designed and developed the IoT-Core platform to easily authenticate Iot-Gateway devices and collect data from the devices.
+3. For long-range wired communication developed and implemented a higher layer CAN protocol, which is used in IoT-Gateway to collect data from various sensor-nodes.
+
 
