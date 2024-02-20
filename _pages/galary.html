@@ -35,8 +35,16 @@ author_profile: true
 
 <button id="openModalBtn">Open Modal</button>
 
-<div id="" class="">
-  <div class="">
-    <p>This is a modal!</p>
-  </div>
+<div id="test" class="">
+  <p>This is a modal!</p>
 </div>
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<script>
+  $(document).ready(function(){
+    $("button").click(function(){
+      $("#test").hide();
+    });
+  });
+</script>
