@@ -23,15 +23,19 @@ author_profile: true
     transform: translate(-50%, -50%) scale(1);
   }
 
-
-
   #overlay{
+    position: fixed;
+    opacity: 0;
     top: 0;
     bottom: 0;
     left: 0;
     right: 0;
     background: rgba(0, 0, 0, 0.5);
     pointer-events: none;
+  }
+
+  #overlay.active {
+    opacity: 1;
   }
 
 </style>
@@ -65,7 +69,7 @@ author_profile: true
   <button id="close">&times;</button>
 </div>
 
-<div id="overlay"></div>
+<div id="overlay" class="active"></div>
 
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
@@ -74,11 +78,13 @@ author_profile: true
     
     $("button").click(function(){
       $("#test").addClass("active");
+      $("#overlay").removeClass("active");
       $("body").css("overflow", "hidden");
     });
 
     $("#close").click(function(){
       $("#test").removeClass("active");
+      $("#overlay").addClass("active");
       $("body").css("overflow", "auto");
     });
 
