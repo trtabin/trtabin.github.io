@@ -8,6 +8,31 @@ author_profile: true
 {% include base_path %}
 <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
 <style>
+  .modal {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    width: 500px;
+    max-width: 80%;
+    background: wheat;
+    z-index: 10;
+    transform: translate(-50%, -50%) scale(0);
+  }
+
+  .modal.active {
+    transform: translate(-50%, -50%) scale(1);
+  }
+
+
+
+  #overlay{
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.5);
+    pointer-events: none;
+  }
 
 </style>
 
@@ -35,23 +60,24 @@ author_profile: true
 
 <button id="openModalBtn">Open Modal</button>
 
-<div id="test" class="" style="max-width: 80%;position: fixed;top: 50%;left: 50%;width: 500px;background: wheat;transform: translate(-50%, -50%);">
+<div id="test" class="modal">
   <p>This is a modal!</p>
   <button id="close">&times;</button>
 </div>
+
+<div id="overlay"></div>
 
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 <script>
   $(document).ready(function(){
-    $("#test").hide();
-
+    
     $("button").click(function(){
-      $("#test").show();
+      $("#test").addClass("active");
     });
 
     $("close").click(function(){
-      $("#test").hide();
+      $("#test").removeClass("active");
     });
 
   });
