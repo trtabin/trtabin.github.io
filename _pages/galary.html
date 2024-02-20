@@ -74,10 +74,12 @@ author_profile: true
     
     $("button").click(function(){
       $("#test").addClass("active");
+      $("body").css("overflow", "hidden");
     });
 
     $("#close").click(function(){
       $("#test").removeClass("active");
+      $("body").css("overflow", "auto");
     });
 
   });
