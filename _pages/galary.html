@@ -31,7 +31,10 @@ author_profile: true
     left: 0;
     right: 0;
     background: rgba(0, 0, 0, 0.1);
-    pointer-events: none;
+    &:active {
+      display: inline-block;
+      pointer-events: none;
+    }
   }
 
   #overlay.active {
@@ -88,7 +91,7 @@ author_profile: true
       $("body").css("overflow", "auto");
     });
 
-    $("#overlay").click(function(){
+    $("#overlay").on("click", function(){
       $("#test").removeClass("active");
       $("#overlay").removeClass("active");
       $("body").css("overflow", "auto");
