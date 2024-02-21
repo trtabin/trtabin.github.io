@@ -11,3 +11,11 @@ author_profile: true
 ### Noakhali Science and Technology University
 January 2017 - March 2022
 CGPA: 3.76 out of 4.00
+
+### Highlighted Courses:
+    - Microcontroller and Sensor Interfacing
+
+## Higher Secondary School Certificate
+### Dr. Mahbubur Rahman Mollah College
+May 2016
+CGPA: 5.00 out of 5.00
