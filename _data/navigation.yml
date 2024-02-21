@@ -12,8 +12,8 @@ main:
   - title: "Projects"
     url: /project/
         
-  # - title: "Blog Posts"
-  #   url: /year-archive/
+  - title: "Education"
+    url: /education/
 
   - title: "Skills"
     url: /skills/
