@@ -1,0 +1,88 @@
+---
+layout: archive
+title: "Project"
+permalink: /project/
+author_profile: true
+---
+
+{% include base_path %}
+<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+<style>
+  .modal2 {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    width: 500px;
+    max-width: 80%;
+    background: wheat;
+    z-index: 10;
+    transform: translate(-50%, -50%) scale(0);
+  }
+
+  .modal2.active {
+    transform: translate(-50%, -50%) scale(1);
+  }
+
+  #overlay{
+    position: fixed;
+    opacity: 0;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.1);
+    pointer-events: none;
+  }
+
+  #overlay.active {
+    opacity: 1;
+  }
+
+</style>
+
+<div class="container">
+  <div class="row mt-3">
+    <div class="col-md-6 pl-0">
+      <h5 style="font-size: 0.75rem;">Design and Developed Weather Station</h5>
+    </div>
+
+    <div class="col-md-6 pl-0">
+      <h5 style="font-size: 0.75rem;">Data Logger</h5>
+    </div>
+  </div>
+</div>
+
+<button id="openModalBtn">Open Modal</button>
+
+<div id="test" class="modal2">
+  <p>This is a modal!</p>
+  <button id="close">&times;</button>
+</div>
+
+<div id="overlay"></div>
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<script>
+  $(document).ready(function(){
+    
+    $("button").click(function(){
+      $("#test").addClass("active");
+      $("#overlay").addClass("active");
+      $("body").css("overflow", "hidden");
+    });
+
+    $("#close").click(function(){
+      $("#test").removeClass("active");
+      $("#overlay").removeClass("active");
+      $("body").css("overflow", "auto");
+    });
+
+    $("#overlay").on("click", function(){
+      $("#test").removeClass("active");
+      $("#overlay").removeClass("active");
+      $("body").css("overflow", "auto");
+    });
+
+  });
+</script>
