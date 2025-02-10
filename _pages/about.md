@@ -20,8 +20,15 @@ Tahmidur Rahman Tabin received the Bachelor of Science degree in Electrical and 
 
 
 # Work Experience 
+
+### Engineer, R&D Product Development Planning
+Samsung Electronics [ 05/2024 – Current ] 
+
+1. Adding new features in the existing Samsung products.
+2. Implementing and testing machine learning algorithm in Samsung edge devices.
+
 ### Embedded Hardware Engineer
-CredoSense Inc. (Ltd). [ 08/2022 – Current ] 
+CredoSense Inc. (Ltd). [ 08/2022 – 04/2024 ] 
 
 1. Updated the existing firmware of IoT-Gateway to reduce 30% power consumption by improving sleep mode and using a separate low-power coprocessor and also improved the overall performance of the device.
 2. Designed and developed the IoT-Core platform to easily authenticate Iot-Gateway devices and collect data from the devices.
