@@ -8,8 +8,7 @@ redirect_from:
   - /about.html
 ---
 
-Tahmidur Rahman Tabin received the Bachelor of Science degree in Electrical and Electronic Engineering from Noakhali Science and Technology University, Noakhali, Bangladesh, in 2022. He is works with the R&D team as Embedded System Engineer at Crodosense Limited. His research interests include the development of low complexity, power-efficient machine learning solutions for wearable devices, energy efficient signal processing and edge computing. 
-
+I’m a Bangladeshi electrical engineer and programmer passionate about embedded systems and machine learning. During my professional career, I have had the opportunity to work on projects ranging from embedded software architecture design to developing algorithms for sensor node communication. Among my skills, I highlight my ability to develop and debug firmware for different microcontrollers, microprocessors, and SoCs of various architectures. Currently, I’m working on a software development project for a wearable device that aims to integrate an Al algorithm into an edge device. My research interests include the development of low-complexity, power-efficient machine learning solutions for wearable devices, energy-efficient signal processing, and edge computing.
 
 
 # Researh Interest 
