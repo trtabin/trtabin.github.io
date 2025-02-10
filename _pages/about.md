@@ -14,7 +14,7 @@ Tahmidur Rahman Tabin received the Bachelor of Science degree in Electrical and 
 
 # Researh Interest 
 1. Energy Efficient Embedded System Design
-2. Embedded Network Control Systems
+2. Internet of Things
 3. Real-Time Systems
 2. Machine Learning
 
