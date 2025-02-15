@@ -7,64 +7,6 @@ author_profile: true
 
 {% include base_path %}
 <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
-<style>
-    @keyframes fade {
-        from {
-            opacity: 0.4;
-        }
-
-        to {
-            opacity: 1;
-        }
-    }
-
-    #slider {
-        margin: 0 auto;
-        width: 80%;
-        overflow: hidden;
-    }
-
-    .slides {
-        overflow: hidden;
-        animation-name: fade;
-        animation-duration: 1s;
-        display: none;
-    }
-
-    img {
-        width: 100%;
-    }
-
-    #dot {
-        margin: 0 auto;
-        text-align: center;
-    }
-
-    .dot {
-        display: inline-block;
-        border-radius: 50%;
-        background: #d3d3d3;
-        padding: 8px;
-        margin: 10px 5px;
-    }
-
-    .active {
-        background: black;
-    }
-
-    @media (max-width:567px) {
-        #slider {
-            width: 100%;
-
-        }
-    }
-
-    #heading {
-        display: block;
-        text-align: center;
-        font-size: 1em;
-    }
-</style>
 
 <div class="container">
     <br>
@@ -85,23 +27,7 @@ author_profile: true
 
         <h4>Display Unit for CSL-Series Logger [2024]</h4>
         <img src="/images/CSL_Display_Unit.png" style="width: 70%; height: auto; float: left;" class="img-fluid" alt="CSL Display Unit">
-        <!-- <div id="slider">
 
-   
-            <div class="slides">
-                <img src="/images/du_1.jpg" width="100%" />
-            </div>    
-            <div class="slides">
-                <img src="/images/du_2.jpg" width="100%" />
-            </div>    
-            <div class="slides">
-                <img src="/images/CSL_Display_Unit.png" width="100%" />
-            </div>
-        
-        
-            <div id="dot"><span class="dot"></span><span class="dot"></span><span class="dot"></span><span
-                    class="dot"></span><span class="dot"></span></div>
-        </div> -->
         <p>
             • Developed the firmware of the product. <br>
             • Product Details: <a href="https://credosense.com/display-unit-csl-edu10/"> CSL Display Unit</a>
@@ -112,30 +38,7 @@ author_profile: true
     <div class="row mt-4">
 
         <h4>Automated Weather Station[2024]</h4>
-        <!-- <img src="/images/CSL_Display_Unit.png" style="width: 70%; height: auto; float: left;" class="img-fluid" alt="CSL Display Unit"> -->
-        <div id="slider">
-
-   
-            <div class="slides">
-                <img src="/images/weather_station.jpg" width="100%" />
-            </div>    
-            <div class="slides">
-                <img src="/images/weather_station.png" width="100%" />
-            </div>    
-            <div class="slides">
-                <img src="/images/ws_1.jpg" width="100%" />
-            </div>
-            <div class="slides">
-                <img src="/images/ws_2.jpg" width="100%" />
-            </div>
-            <div class="slides">
-                <img src="/images/ws_4.jpg" width="100%" />
-            </div> 
-        
-        
-            <div id="dot"><span class="dot"></span><span class="dot"></span><span class="dot"></span><span
-                    class="dot"></span><span class="dot"></span></div>
-        </div>
+        <img src="/images/weather_station.png" style="width: 70%; height: auto; float: left;" class="img-fluid" alt="CSL Display Unit">
         
         <p>
             • Developed the firmware of the product. <br>
@@ -146,39 +49,6 @@ author_profile: true
 
 </div>
 
-
-
-<script>
-    var index = 0;
-    var slides = document.querySelectorAll(".slides");
-    var dot = document.querySelectorAll(".dot");
-
-    function changeSlide() {
-
-        if (index < 0) {
-            index = slides.length - 1;
-        }
-
-        if (index > slides.length - 1) {
-            index = 0;
-        }
-
-        for (let i = 0; i < slides.length; i++) {
-            slides[i].style.display = "none";
-            dot[i].classList.remove("active");
-        }
-
-        slides[index].style.display = "block";
-        dot[index].classList.add("active");
-
-        index++;
-
-        setTimeout(changeSlide, 2000);
-
-    }
-
-    changeSlide();
-</script>
 
 
 
