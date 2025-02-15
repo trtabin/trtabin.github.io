@@ -38,14 +38,8 @@ author_profile: true
     <div class="row mt-4">
 
         <h4>Automated Weather Station[2024]</h4>
-        <div class="carousel-container">
-            <div class="carousel-slide">
-                <img src="/images/Weather_Station.png" alt="Image 1">
-                <img src="/images/ws_1.jpg" alt="Image 1">
-                <img src="/images/ws_3.jpg" alt="Image 2">
-                <img src="/images/ws_4.jpg" alt="Image 3">
-            </div>
-        </div>
+        <img src="/images/CSL_Display_Unit.png" style="width: 70%; height: auto; float: left;" class="img-fluid" alt="CSL Display Unit">
+        
         <p>
             • Developed the firmware of the product. <br>
             • Product Details: <a href="https://credosense.com/automated-weather-station-cs-aws6/"> CSL Display Unit</a>
@@ -59,26 +53,5 @@ author_profile: true
 
 
 
-
-
-<script>
-    let currentIndex = 0;
-
-    function showNextImage() {
-        const images = document.querySelectorAll('.carousel-slide img');
-        const totalImages = images.length;
-
-        currentIndex++;
-        if (currentIndex >= totalImages) {
-            currentIndex = 0;
-        }
-
-        const newTransformValue = -100 * currentIndex + '%';
-        document.querySelector('.carousel-slide').style.transform = `translateX(${newTransformValue})`;
-    }
-
-    // Automatically change the image every 3 seconds
-    setInterval(showNextImage, 3000);
-</script>
 
 
