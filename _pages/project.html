@@ -8,50 +8,59 @@ author_profile: true
 {% include base_path %}
 <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
 <style>
-    * {
-        text-decoration: none;
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        background-color: #f0f0f0;
+    }
+
+    .carousel-container {
+        width: 80%;
+        overflow: hidden;
+        border: 2px solid #ccc;
+        border-radius: 10px;
+    }
+
+    .carousel-slide {
+        display: flex;
+        transition: transform 1s ease-in-out;
+    }
+
+    .carousel-slide img {
+        width: 100%;
+        height: auto;
+        border-right: 2px solid #ccc;
+        flex-shrink: 0;
+    }
+
+    /* Optional: add hover effect */
+    .carousel-container:hover .carousel-slide {
+        animation: slide 20s infinite;
+    }
+
+    @keyframes slide {
+        0% {
+            transform: translateX(0);
+        }
+        25% {
+            transform: translateX(-100%);
+        }
+        50% {
+            transform: translateX(-200%);
+        }
+        75% {
+            transform: translateX(-300%);
+        }
+        100% {
+            transform: translateX(-400%);
+        }
     }
 </style>
-<!-- <style>
-    /* a {
-        text-decoration: none !important;
-    } */
-
-    #openModalBtn {
-        cursor: pointer;    
-    }
-
-    .modal2 {
-        position: fixed;
-        top: 50%;
-        left: 50%;
-        width: 500px;
-        max-width: 80%;
-        background: wheat;
-        z-index: 22;
-        transform: translate(-50%, -50%) scale(0);
-    }
-
-    .modal2.active {
-        transform: translate(-50%, -50%) scale(1);
-    }
-
-    #overlay {
-        position: fixed;
-        opacity: 0;
-        top: 0;
-        bottom: 0;
-        left: 0;
-        right: 0;
-        background: rgba(0, 0, 0, 0.1);
-        z-index: 21;
-        pointer-events: none;
-    }
-
-    #overlay.active {
-        opacity: 1;
-    }
-</style> -->
 
 <div class="container">
     <br>
@@ -82,7 +91,14 @@ author_profile: true
     <div class="row mt-4">
 
         <h4>Automated Weather Station[2024]</h4>
-        <img src="/images/Weather_Station.png" style="width: 70%; height: auto; float: left;" class="img-fluid" alt="CSL Display Unit">
+        <div class="carousel-container">
+            <div class="carousel-slide">
+                <img src="/images/Weather_Station.png" alt="Image 1">
+                <img src="/images/ws_1.jpg" alt="Image 1">
+                <img src="/images/ws_3.jpg" alt="Image 2">
+                <img src="/images/ws_4.jpg" alt="Image 3">
+            </div>
+        </div>
         <p>
             • Developed the firmware of the product. <br>
             • Product Details: <a href="https://credosense.com/automated-weather-station-cs-aws6/"> CSL Display Unit</a>
@@ -92,37 +108,30 @@ author_profile: true
 
 </div>
 
-<!-- <button id="openModalBtn">Open Modal</button> -->
-<!-- 
-<div id="test" class="modal2">
-    <p>This is a modal!</p>
-    <button id="close">&times;</button>
-</div>
-
-<div id="overlay"></div>
 
 
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+
+
+
 <script>
-    $(document).ready(function () {
+    let currentIndex = 0;
 
-        $("#openModalBtn").on("click", function () {
-            $("#test").addClass("active");
-            $("#overlay").addClass("active");
-            $("body").css("overflow", "hidden");
-        });
+    function showNextImage() {
+        const images = document.querySelectorAll('.carousel-slide img');
+        const totalImages = images.length;
 
-        $("#close").click(function () {
-            $("#test").removeClass("active");
-            $("#overlay").removeClass("active");
-            $("body").css("overflow", "auto");
-        });
+        currentIndex++;
+        if (currentIndex >= totalImages) {
+            currentIndex = 0;
+        }
 
-        $("#overlay").on("click", function () {
-            $("#test").removeClass("active");
-            $("#overlay").removeClass("active");
-            $("body").css("overflow", "auto");
-        });
+        const newTransformValue = -100 * currentIndex + '%';
+        document.querySelector('.carousel-slide').style.transform = `translateX(${newTransformValue})`;
+    }
 
-    });
-</script> -->
+    // Automatically change the image every 3 seconds
+    setInterval(showNextImage, 3000);
+</script>
+
+
