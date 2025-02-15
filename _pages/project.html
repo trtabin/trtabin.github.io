@@ -7,60 +7,7 @@ author_profile: true
 
 {% include base_path %}
 <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
-<style>
-    body {
-        font-family: Arial, sans-serif;
-        margin: 0;
-        padding: 0;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        height: 100vh;
-        background-color: #f0f0f0;
-    }
 
-    .carousel-container {
-        width: 80%;
-        overflow: hidden;
-        border: 2px solid #ccc;
-        border-radius: 10px;
-    }
-
-    .carousel-slide {
-        display: flex;
-        transition: transform 1s ease-in-out;
-    }
-
-    .carousel-slide img {
-        width: 100%;
-        height: auto;
-        border-right: 2px solid #ccc;
-        flex-shrink: 0;
-    }
-
-    /* Optional: add hover effect */
-    .carousel-container:hover .carousel-slide {
-        animation: slide 20s infinite;
-    }
-
-    @keyframes slide {
-        0% {
-            transform: translateX(0);
-        }
-        25% {
-            transform: translateX(-100%);
-        }
-        50% {
-            transform: translateX(-200%);
-        }
-        75% {
-            transform: translateX(-300%);
-        }
-        100% {
-            transform: translateX(-400%);
-        }
-    }
-</style>
 
 <div class="container">
     <br>
