@@ -24,8 +24,8 @@ main:
   - title: "Contact"
     url: /contact/
 
-  - title: "CV"
-    url: /files/Tahmidur_Rahman_Tabin_CV.pdf
+  # - title: "CV"
+  #   url: /files/Tahmidur_Rahman_Tabin_CV.pdf
     
   # - title: "Guide"
     # url: /markdown/
